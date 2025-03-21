@@ -12,7 +12,6 @@
     <header>
         <h1>Surya Ramyasri Pulugurtha</h1>
         <p>Data Science & Full Stack Enthusiast</p>
-        
     </header>
 
     <nav>
@@ -20,6 +19,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -68,6 +68,42 @@
         </div>
     </section>
 
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certificates-grid">
+            <div class="certificate" onclick="openModal('cert1.jpg')">
+                <img src="cert1.jpg" alt="AI-ML Virtual Internship - Google">
+                <p>AI-ML Virtual Internship - Google</p>
+            </div>
+            <div class="certificate" onclick="openModal('cert2.jpg')">
+                <img src="cert2.jpg" alt="Data Science Master Internship - Altair">
+                <p>Data Science Master Internship - Altair</p>
+            </div>
+            <div class="certificate" onclick="openModal('cert3.jpg')">
+                <img src="cert3.jpg" alt="Python for Beginners - IBM">
+                <p>Python for Beginners - IBM</p>
+            </div>
+            <div class="certificate" onclick="openModal('cert4.jpg')">
+                <img src="cert4.jpg" alt="AWS Cloud Computing - APSSDC">
+                <p>AWS Cloud Computing - APSSDC</p>
+            </div>
+            <div class="certificate" onclick="openModal('cert5.jpg')">
+                <img src="cert5.jpg" alt="Foundations of Machine Learning - GVPCE(A)">
+                <p>Foundations of Machine Learning - GVPCE(A)</p>
+            </div>
+            <div class="certificate" onclick="openModal('cert6.jpg')">
+                <img src="cert6.jpg" alt="Fundamentals of C++ - EdX">
+                <p>Fundamentals of C++ - EdX</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for viewing certificates -->
+    <div id="certificateModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" class="modal-content">
+    </div>
+
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:suryaramyasripulugurtha@gmail.com">suryaramyasripulugurtha@gmail.com</a></p>
@@ -81,5 +117,16 @@
     <footer>
         <p>© 2025 Surya Ramyasri Pulugurtha</p>
     </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            document.getElementById("certificateModal").style.display = "flex";
+            document.getElementById("modalImg").src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById("certificateModal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
