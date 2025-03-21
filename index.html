@@ -46,7 +46,7 @@
     </section>
 
     <section id="experience">
-        <h2>Experience & Certifications</h2>
+        <h2>Experience</h2>
         <p><strong>Google AI-ML Virtual Internship</strong> - Learned TensorFlow, neural networks.</p>
         <p><strong>Altair Data Science Master Internship</strong> - Worked with Rapid Miner, Data Analysis.</p>
         <p><strong>GenAI Internship</strong> - Developed an intelligent Recruitment Agent.</p>
@@ -70,39 +70,34 @@
 
     <section id="certifications">
         <h2>Certifications</h2>
-        <div class="certificates-grid">
-            <div class="certificate" onclick="openModal('cert1.jpg')">
-                <img src="cert1.jpg" alt="AI-ML Virtual Internship - Google">
-                <p>AI-ML Virtual Internship - Google</p>
-            </div>
-            <div class="certificate" onclick="openModal('cert2.jpg')">
-                <img src="cert2.jpg" alt="Data Science Master Internship - Altair">
-                <p>Data Science Master Internship - Altair</p>
-            </div>
-            <div class="certificate" onclick="openModal('cert3.jpg')">
-                <img src="cert3.jpg" alt="Python for Beginners - IBM">
-                <p>Python for Beginners - IBM</p>
-            </div>
-            <div class="certificate" onclick="openModal('cert4.jpg')">
-                <img src="cert4.jpg" alt="AWS Cloud Computing - APSSDC">
-                <p>AWS Cloud Computing - APSSDC</p>
-            </div>
-            <div class="certificate" onclick="openModal('cert5.jpg')">
-                <img src="cert5.jpg" alt="Foundations of Machine Learning - GVPCE(A)">
-                <p>Foundations of Machine Learning - GVPCE(A)</p>
-            </div>
-            <div class="certificate" onclick="openModal('cert6.jpg')">
-                <img src="cert6.jpg" alt="Fundamentals of C++ - EdX">
-                <p>Fundamentals of C++ - EdX</p>
-            </div>
+        <div class="certifications-list">
+            <h3>Internships & Industry Certifications</h3>
+            <ul>
+                <li><strong>Google AI-ML Virtual Internship</strong> – TensorFlow, neural networks, ML applications</li>
+                <li><strong>Altair Data Science Master Internship</strong> – Rapid Miner, data analysis</li>
+                <li><strong>GenAI Internship</strong> – Developed an intelligent Recruitment Agent</li>
+            </ul>
+
+            <h3>Programming & Computer Science</h3>
+            <ul>
+                <li><strong>Fundamentals of C++</strong> – EdX</li>
+                <li><strong>Python for Beginners</strong> – IBM Springboard</li>
+                <li><strong>Foundations of Machine Learning</strong> – GVPCE(A)</li>
+                <li><strong>Fundamentals of Computing Machinery</strong> – GVPCEW</li>
+            </ul>
+
+            <h3>Cloud Computing & AI</h3>
+            <ul>
+                <li><strong>AWS Cloud Computing [Online]</strong> – APSSDC</li>
+                <li><strong>SQL for Data Science</strong> – Coursera</li>
+            </ul>
+
+            <h3>Internet of Things (IoT) & Emerging Tech</h3>
+            <ul>
+                <li><strong>Insights into Internet of Things (IoT)</strong> – GVPCEW</li>
+            </ul>
         </div>
     </section>
-
-    <!-- Modal for viewing certificates -->
-    <div id="certificateModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImg" class="modal-content">
-    </div>
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -117,16 +112,5 @@
     <footer>
         <p>© 2025 Surya Ramyasri Pulugurtha</p>
     </footer>
-
-    <script>
-        function openModal(imgSrc) {
-            document.getElementById("certificateModal").style.display = "flex";
-            document.getElementById("modalImg").src = imgSrc;
-        }
-
-        function closeModal() {
-            document.getElementById("certificateModal").style.display = "none";
-        }
-    </script>
 </body>
 </html>
